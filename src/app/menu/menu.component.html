@@ -3,6 +3,8 @@
     <h3>Menu</h3>
     <hr />
   </div>
+
+  <!-- Display all Dishes -->
   <div style="display: flex;">
     <mat-grid-list cols="2" rowHeight="200px" class="grid-layout-custom">
       <mat-grid-tile
@@ -16,9 +18,11 @@
         </mat-grid-tile-footer>
       </mat-grid-tile>
     </mat-grid-list>
+    <!-- <app-dishdetail [dish]="selectedDish"></app-dishdetail> -->
   </div>
   <hr />
 
+  <!-- Selected Card Display -->
   <div class="small-container" style="display: flex">
     <div *ngIf="selectedDish" style="max-width: 50%;">
       <mat-card>
